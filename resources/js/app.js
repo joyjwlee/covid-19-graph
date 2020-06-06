@@ -75,13 +75,13 @@ function updateStats() {
 
 	country_name_element.innerHTML = last_entry.country_name;
 	total_cases_element.innerHTML = last_entry.total_cases || 0;
-	new_cases_element.innerHTML = `+${last_entry.new_cases || 0}`;
+	/*new_cases_element.innerHTML = `+${last_entry.new_cases || 0}`;*/
 
 	recovered_element.innerHTML = last_entry.total_recovered || 0;
-	new_recovered_element.innerHTML = `+${parseInt(last_entry.total_recovered.replace(/,/g, "")) - parseInt(before_last_entry.total_recovered.replace(/,/g, ""))}`;
+	/*new_recovered_element.innerHTML = `+${parseInt(last_entry.total_recovered.replace(/,/g, "")) - parseInt(before_last_entry.total_recovered.replace(/,/g, ""))}`;*/
 
 	deaths_element.innerHTML = last_entry.total_deaths;
-	new_deaths_element.innerHTML = `+${last_entry.new_deaths || 0}`;
+	/*new_deaths_element.innerHTML = `+${last_entry.new_deaths || 0}`;*/
 }
 
 // UPDATE CHART
